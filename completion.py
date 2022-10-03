@@ -340,6 +340,13 @@ js_svelte = [
 		completion_format=sublime.COMPLETION_FORMAT_SNIPPET,
 		kind=sublime.KIND_SNIPPET
 	),
+	sublime.CompletionItem(
+		"store",
+		annotation="store.update",
+		completion="store.update((value) => ({\n\t...value,\n\t$0\n}))",
+		completion_format=sublime.COMPLETION_FORMAT_SNIPPET,
+		kind=sublime.KIND_SNIPPET
+	),
 ]
 
 non_svelte = [
